@@ -6,9 +6,6 @@
   "engines": {
     "node": ">=6.0.0"
   },
-  "files": [
-    "dist/"
-  ],
   "scripts": {
     "build": "rm -rf dist && babel src --no-comments --out-dir dist",
     "watch": "rm -rf dist && babel src --watch --source-maps true --out-dir dist",
