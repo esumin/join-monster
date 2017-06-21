@@ -25,8 +25,7 @@
     "prepublish": "in-publish && /bin/sh ./scripts/prepublish.sh && npm run build || not-in-publish",
     "preversion": ". ./scripts/checkgit.sh && npm test",
     "db-build": "TZ=UTC babel-node test-api/data/build.js",
-    "db-shell": "sqlite3 --column --header test-api/data/db/demo-data.sl3",
-    "postinstall": "npm i && npm run build"
+    "db-shell": "sqlite3 --column --header test-api/data/db/demo-data.sl3"
   },
   "ava": {
     "concurrency": 10,
